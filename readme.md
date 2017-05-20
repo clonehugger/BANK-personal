@@ -35,7 +35,8 @@ Web-based application to mantain control on personal expenses
   <h2><b>Instalar Bootstrap (si no existe)</b></h2>
 <ul>
 <li>You can also install and manage Bootstrap's Less, CSS, JavaScript, and fonts using Composer:</li>
-<li> `$ composer require twbs/bootstrap`</li>
+<li> ```$ composer require twbs/bootstrap
+      ```</li>
 
 
 
