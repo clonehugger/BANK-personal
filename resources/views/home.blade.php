@@ -27,8 +27,8 @@
                       <option>Útiles Escolares</option>
                     </select>
                   </div>
-                  <button type="submit" class="btn btn-success btn-lg btn-block">Ingreso</button>
-                  <button type="submit" class="btn btn-danger btn-lg btn-block">Gasto</button>
+                  <button type="submit" name = "transaction" value = "positive" class="btn btn-success btn-lg btn-block">Ingreso</button>
+                  <button type="submit" name = "transaction" value = "negative" class="btn btn-danger btn-lg btn-block">Gasto</button>
                   </form>
 
                 </div>
