@@ -13,8 +13,14 @@ class CreateCategorysTable extends Migration
     public function up()
     {
       Schema::create('categorys', function (Blueprint $table) {
-          $table->string('user_id');
-          $table->string('name');
+          $table->increments('id');
+          $table->integer('user_id')->unsigned();
+          $table->string('title');
+
+          $table->foreign('user_id')
+            ->references('id')
+            ->on('users')
+            ->onDelete('cascade');
       });
         //
     }
@@ -26,7 +32,7 @@ class CreateCategorysTable extends Migration
      */
     public function down()
     {
-      Schema::drop('categorys');
+      Schema::dropIfExists('categorys');
         //
     }
 }
