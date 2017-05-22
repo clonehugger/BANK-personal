@@ -20,6 +20,7 @@
                     </div>
                       <br>
                     <select required class="form-control">
+                      <option>Deposito</option>
                       <option>Starbucks</option>
                       <option>Comida</option>
                       <option>Uber</option>
@@ -27,8 +28,8 @@
                       <option>Útiles Escolares</option>
                     </select>
                   </div>
-                  <button type="submit" name = "transaction" value = "positive" class="btn btn-success btn-lg btn-block">Ingreso</button>
-                  <button type="submit" name = "transaction" value = "negative" class="btn btn-danger btn-lg btn-block">Gasto</button>
+                  <button type="submit" name = "transactions" value = "positive" class="btn btn-success btn-lg btn-block">Ingreso</button>
+                  <button type="submit" name = "transactions" value = "negative" class="btn btn-danger btn-lg btn-block">Gasto</button>
                   </form>
 
                 </div>

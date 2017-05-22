@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTransactionsTable extends Migration
+class CreateCatTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,9 @@ class CreateTransactionsTable extends Migration
      */
     public function up()
     {
-      Schema::create('transactions', function (Blueprint $table) {
+      Schema::create('cat', function (Blueprint $table) {
           $table->string('user_id');
-          $table->integer('amount');
-          $table->string('category');
-          $table->timestamp('created_at');
+          $table->string('name');
       });
         //
     }
@@ -28,7 +26,7 @@ class CreateTransactionsTable extends Migration
      */
     public function down()
     {
-      Schema::drop('transactions');
+      Schema::drop('cat');
         //
     }
 }

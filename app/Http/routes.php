@@ -18,3 +18,8 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/test', 'TestController@index');
+Route::get('/catReport', 'catreportController@index');
+
+
+?>
