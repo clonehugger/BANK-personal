@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCatsTable extends Migration
+class CreateCategorysTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateCatsTable extends Migration
      */
     public function up()
     {
-      Schema::create('cats', function (Blueprint $table) {
+      Schema::create('categorys', function (Blueprint $table) {
           $table->string('user_id');
           $table->string('name');
       });
@@ -26,7 +26,7 @@ class CreateCatsTable extends Migration
      */
     public function down()
     {
-      Schema::drop('cats');
+      Schema::drop('categorys');
         //
     }
 }
