@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Transaction extends Model
 {
@@ -15,6 +16,10 @@ class Transaction extends Model
 //setAddressAttribute
 //setNameAttribute
 
+
+    public function setCreatedAtAttribute(){
+      $this->attributes['created_at'] =  Carbon::now();
+    }
 
     public function user(){
       return $this->belongsTo('App\User');
